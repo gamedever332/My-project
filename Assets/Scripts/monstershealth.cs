@@ -2,22 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class monstershealth : MonoBehaviour
+public class MonstersHealth : MonoBehaviour
 {
-    public float health = 100.0f;
-    public float damage = 10.0f;
+    public float Health = 100.0f;
+    public float Damage = 10.0f;
 
     private void OnCollisionEnter(Collision other){
         if (other.gameObject != gameObject){
-            health -= damage;
+            Health -= Damage;
             Destroy(other.gameObject);
         }
     }
 
     private void Update(){
-        if (health <= 0){
+        if (Health <= 0){
             Destroy(gameObject);
-            Debug.Log("Enemy was destroyed!");
         }
     }
 }

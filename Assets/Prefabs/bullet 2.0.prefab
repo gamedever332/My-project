@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6703956644931297407}
   - component: {fileID: 1132464747531272944}
-  - component: {fileID: 5459727780895925545}
   - component: {fileID: -8686269184203240369}
+  - component: {fileID: 2514119997768525635}
   m_Layer: 0
   m_Name: bullet 2.0
   m_TagString: Untagged
@@ -48,29 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168d46d26455eca4eb04fd9609525f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1143443841700205412}
-  bspeed: 30
---- !u!65 &5459727780895925545
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143443841700205412}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  Bullet: {fileID: 1143443841700205412}
+  BulletSpeed: 60
 --- !u!54 &-8686269184203240369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98,6 +77,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
+--- !u!65 &2514119997768525635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143443841700205412}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1543671537671061982
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,8 +14,4 @@ public class ReturnToMenu : MonoBehaviour
             OpenMenu();
         }
     }
-
-    public void Start(){
-        Debug.Log("You can upgrade your weapon on the shop or start a new game");
-    }
 }

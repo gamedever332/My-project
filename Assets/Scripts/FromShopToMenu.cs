@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReturnToGame : MonoBehaviour
+public class FromShopToMenu : MonoBehaviour
 {
-    public string Scene;
-
     public void LoadScene(){
-        SceneManager.LoadScene(Scene);
+        SceneManager.LoadScene("Menu");
     }
 }

@@ -2185,6 +2185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2126859dfc1f1794196acdbf5244c32a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 5672036801461793877, guid: 61f084efb1d727f4594b69839e4d3195, type: 3}
-  health: 100
-  damage: 10
+  Coin: {fileID: 5672036801461793877, guid: 61f084efb1d727f4594b69839e4d3195, type: 3}
+  Health: 100
+  Damage: 10

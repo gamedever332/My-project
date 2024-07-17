@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public GameObject bullet;
+    public GameObject Bullet;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.W)){
-            GameObject clone = Instantiate(bullet, transform.position, transform.rotation);
-            clone.gameObject.transform.localScale = new Vector3(7.0f, 7.0f, 7.0f);
+            GameObject Clone = Instantiate(Bullet, transform.position, transform.rotation);
+            Clone.gameObject.transform.localScale = new Vector3(7.0f, 7.0f, 7.0f);
             
         }
     }
