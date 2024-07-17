@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CollectingCoins : MonoBehaviour
 {
-    public int CoinCount = 0;
     void OnMouseDown(){
-        CoinCount ++;
+        PlayerInventory.CoinCount ++;
+        Debug.Log(PlayerInventory.CoinCount);
         Destroy(gameObject);
     }
 }
