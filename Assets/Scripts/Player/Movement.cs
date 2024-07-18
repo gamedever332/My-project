@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A) & transform.position[0] <= 89.5f){
             transform.position += new Vector3(0.5f, 0, 0);
         }
-        if (Input.GetKey(KeyCode.D) & transform.position[0] >= -41.7f){
+        if (Input.GetKey(KeyCode.D) & transform.position[0] >= -41.0f){
             transform.position += new Vector3(-0.5f, 0, 0);
         }
     }

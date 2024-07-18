@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public static int CoinCount = 0;
+    public static int CoinCount = 100;
+    public static int LvlOfWeapon = 1;
 }

@@ -6,7 +6,7 @@ public class CoinsFromMonsters : MonoBehaviour
 {
     public GameObject Coin;
     public float Health = 100.0f;
-    public float Damage = 10.0f;
+    public static float Damage = 10.0f;
 
     private void OnCollisionEnter(Collision other){
         if (other.gameObject != gameObject){
