@@ -6,7 +6,6 @@ public class CollectingCoins : MonoBehaviour
 {
     void OnMouseDown(){
         PlayerInventory.CoinCount ++;
-        Debug.Log(PlayerInventory.CoinCount);
         Destroy(gameObject);
     }
 }

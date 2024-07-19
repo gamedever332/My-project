@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonstersHealth : MonoBehaviour
 {
-    public float Health = 100.0f;
+    public float Health = 150.0f;
     public static float Damage = 10.0f;
 
     private void OnCollisionEnter(Collision other){

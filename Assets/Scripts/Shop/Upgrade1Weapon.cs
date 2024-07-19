@@ -8,17 +8,17 @@ public class Upgrade1Weapon : MonoBehaviour
     public GameObject UsedButton;
 
     public void MakeUpgrade(){
-        if (PlayerInventory.CoinCount >= 5 & PlayerInventory.LvlOfWeapon < 10){
+        if (PlayerInventory.CoinCount >= 5 & PlayerInventory.LvlOf1Weapon < 10){
             PlayerInventory.CoinCount -= 5;
             FirstWeaponDamage ++;
-            MonstersHealth.Damage = Upgrade1Weapon.FirstWeaponDamage;
-            CoinsFromMonsters.Damage = Upgrade1Weapon.FirstWeaponDamage;
-            PlayerInventory.LvlOfWeapon ++;
+            MonstersHealth.Damage = FirstWeaponDamage;
+            CoinsFromMonsters.Damage = FirstWeaponDamage;
+            PlayerInventory.LvlOf1Weapon ++;
         }
     }
     
     public void Update(){
-        if (PlayerInventory.LvlOfWeapon == 10){
+        if (PlayerInventory.LvlOf1Weapon == 10){
             Destroy(gameObject);
             Instantiate(UsedButton, transform.position, Quaternion.identity);
         }

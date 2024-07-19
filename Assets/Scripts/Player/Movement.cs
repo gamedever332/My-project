@@ -7,10 +7,10 @@ public class Movement : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.A) & transform.position[0] <= 89.5f){
-            transform.position += new Vector3(0.5f, 0, 0);
+            transform.position += new Vector3(0.7f, 0, 0);
         }
-        if (Input.GetKey(KeyCode.D) & transform.position[0] >= -41.0f){
-            transform.position += new Vector3(-0.5f, 0, 0);
+        if (Input.GetKey(KeyCode.D) & transform.position[0] >= -40.0f){
+            transform.position += new Vector3(-0.7f, 0, 0);
         }
     }
 }

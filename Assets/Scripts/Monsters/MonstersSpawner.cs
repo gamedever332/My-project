@@ -19,14 +19,14 @@ public class MonsterSpawner : MonoBehaviour
             float[] Cells = new float[] { -34.56f, -4.7f, 25.53f, 55.35f, 85.32f};
             while (i < CountOfMonsters){
                 int MonsterPos = UnityEngine.Random.Range(1, 6) - 1;
-                if (Cells[MonsterPos] != 0 & MonsterWithCoinsInterval != 4){
-                    Instantiate(Monster, new Vector3(Cells[MonsterPos], -4.619827f, -117.9683f), Quaternion.identity);
+                if (Cells[MonsterPos] != 0 & MonsterWithCoinsInterval != 2){
+                    Instantiate(Monster, new Vector3(Cells[MonsterPos], -4.619827f, -154.0f), Quaternion.identity);
                     MonsterWithCoinsInterval ++;
                     Cells[MonsterPos] = 0;
                     i++;
                 }
                 else if (Cells[MonsterPos] != 0){
-                    Instantiate(MonsterWithC, new Vector3(Cells[MonsterPos], -4.619827f, -117.9683f), Quaternion.identity);
+                    Instantiate(MonsterWithC, new Vector3(Cells[MonsterPos], -4.619827f, -154.0f), Quaternion.identity);
                     MonsterWithCoinsInterval = 0;
                     i++;
                 }

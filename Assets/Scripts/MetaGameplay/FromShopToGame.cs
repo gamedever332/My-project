@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class FromShopToMenu : MonoBehaviour
 {
     public void LoadScene(){
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("SampleScene");
     }
 }
